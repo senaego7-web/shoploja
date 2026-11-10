@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Minha Loja</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+      <!-- TELA 1: LOGIN -->
+  <section class="tela" id="login">
+    <form class="caixa" id="formLogin">
+      <h1>🛒 Minha Loja</h1>
+      <p>Entre para ver os produtos</p>
+      <input type="email" id="email" placeholder="E-mail (ex: aluno@gmail.com)" required>
+      <input type="password" id="senha" placeholder="Senha" required>
+      <p id="erro"></p>
+      <button type="submit">Entrar</button>
+    </form>
+  </section>
+
+  <!-- TELA 2: PRODUTOS -->
+  <section class="tela" id="produtos">
+    <h1>Nossos Produtos</h1>
+    <div class="lista">
+      <div class="produto">
+        <img src="https://placehold.co/300x200?text=Fone" alt="Fone de ouvido">
+        <h2>Fone de Ouvido</h2>
+        <p>R$ 89,90</p>
+        <a class="botao" href="#pagamento">Comprar</a>
+      </div>
+      <div class="produto">
+        <img src="https://placehold.co/300x200?text=Teclado" alt="Teclado">
+        <h2>Teclado</h2>
+        <p>R$ 129,90</p>
+        <a class="botao" href="#pagamento">Comprar</a>
+      </div>
+      <div class="produto">
+        <img src="https://placehold.co/300x200?text=Mouse" alt="Mouse">
+        <h2>Mouse Gamer</h2>
+        <p>R$ 59,90</p>
+        <a class="botao" href="#pagamento">Comprar</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TELA 3: PAGAMENTO -->
+  <section class="tela" id="pagamento">
+    <form class="caixa">
+      <h1>💳 Pagamento</h1>
+      <input type="text" placeholder="Nome no cartão" required>
+      <input type="text" placeholder="Número do cartão" maxlength="19" required>
+      <div class="linha">
+        <input type="text" placeholder="Validade (MM/AA)" required>
+        <input type="text" placeholder="CVV" maxlength="3" required>
+      </div>
+      <a class="botao" href="#obrigado">Finalizar compra</a>
+      <a class="voltar" href="#produtos">← Voltar aos produtos</a>
+    </form>
+  </section>
+
+  <!-- TELA 4: OBRIGADO -->
+  <section class="tela" id="obrigado">
+    <div class="caixa">
+      <h1>✅ Compra realizada!</h1>
+      <p>Obrigado por comprar na Minha Loja.</p>
+      <a class="botao" href="#produtos">Voltar à loja</a>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
